@@ -54,8 +54,6 @@ end
 -- SCREEN GUI --
 local ShadowLib = Instance.new("ScreenGui")
 ShadowLib.Name = "ShadowLib"
-ShadowLib.Draggable = true
-ShadowLib.Active = true
 if game:GetService("RunService"):IsStudio() then
 	ShadowLib.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 else
@@ -202,6 +200,8 @@ MainFrame.ImageTransparency = 0.100
 MainFrame.ScaleType = Enum.ScaleType.Slice
 MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
 MainFrame.SliceScale = 0.200
+MainFrame.Draggable = true
+MainFrame.Active = true
 
 InfoFrame.Name = "InfoFrame"
 InfoFrame.Parent = MainFrame
